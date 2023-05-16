@@ -1,143 +1,247 @@
-
 html {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
 }
-.header-container{
-    display: flex;
-    border-bottom: 1px solid gray; 
-    justify-content: space-around;
-    font-weight: bold;
-    font-size: 0.8rem;
-    font-weight: 500;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    align-items: center;
-    position: sticky;
-    top:0;
-    background: #FFFFFF;
+.header-container {
+  display: flex;
+  border-bottom: 1px solid gray;
+  justify-content: space-around;
+  font-weight: bold;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 10;
 }
 
-.header-image{
-    width: 8em;
+.header-image {
+  width: 8em;
 }
 
 .nav-button {
+  display: flex;
+  background-color: white;
+  border-radius: 30px;
+  padding: 0px 1.2rem;
+  height: 2.5rem;
+  border: 2px solid black;
+  font-size: 0.8rem;
+  width: 4.5rem;
+  align-content: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.nav-button:hover {
+  background: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  width: 55rem;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin-left: 2rem;
+  align-items: center;
+  transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+}
+
+nav ul li:hover {
+  color: #6b53f0;
+  cursor: pointer;
+}
+.container-title {
+  flex-direction: column;
+  height: 23rem;
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.1rem 0;
+  width: 17rem;
+}
+.button-title {
+  background-color: white;
+  border-radius: 30px;
+  padding: 0px 1.2rem;
+  height: 2.5rem;
+  border: 2px solid black;
+  font-size: 0.8rem;
+  width: 8.8rem;
+  align-content: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.button-title:hover {
+  background: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+.button-title-alter {
+  color: #6b53f0;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 0px 1.2rem;
+  height: 2.5rem;
+  border: 2px solid #8246cd;
+  font-size: 0.8rem;
+  width: 7rem;
+  align-content: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.button-title-alter:hover {
+  background: #6b53f0;
+  color: #ffffff;
+  cursor: pointer;
+}
+.counter-container {
+  background: #201b24;
+  height: 23rem;
+  display: flex;
+}
+
+.counter-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 2rem;
+}
+
+.container-seccion-title {
+  width: 70%;
+}
+.seccion-title {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 0rem;
+}
+.container-seccion-p {
+  width: 70%;
+}
+.seccion-p {
+  color: #ffffff;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+.counter-content {
+  width: 50%;
+  display: flex;
+}
+.counter-content-div {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2rem;
+}
+.counter-div {
+  padding: 0.9rem;
+}
+.counter-number {
+  font-size: 3.12rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 0rem;
+}
+.counter-number-p {
+  color: #8c939c;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin: 0.2rem;
+  text-align: center;
+}
+.counter-icon {
+  font-size: 1rem;
+  color: #6b53f0;
+  padding-bottom: 0.8rem;
+  padding-right: 0.2rem;
+}
+
+.image-container {
+  background-image: url(../images/home.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 35rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.container-section-title{
+    margin: 0 2rem;
+    padding: 3.5rem 2rem 0 2rem;
+}
+.section-programas{
+    display:flex;
+    height: 26rem;
+    border-bottom: 1px solid black;
+    margin: 0 2rem;
+    padding: 0 2rem;
+}
+ 
+.container-image-section{
+    width: 50%;
     display: flex;
-    background-color: white;
-    border-radius: 30px;
-    padding: 0px 1.2rem;
-    height: 2.5rem;
-    border: 2px solid black;
-    font-size: 0.8rem;
-    width: 4.5rem;
-    align-content: center;
-    justify-content: center;
-    font-weight: 500;
-}
-.nav-button:hover{
-    background: #000000;
-    color: #FFFFFF;
-    cursor: pointer;
-
 }
 
-nav ul{
-    display: flex;
-    justify-content: flex-end;
-    width: 55rem;
-    align-items: center;
+.image-section{
+    width: 35rem;
+    height: 24rem;
+    border-top-right-radius: 9%;
+    border-bottom-right-radius: 9%;
+    border-bottom-left-radius: 9%;
+    justify-self: center;
 }
 
-nav ul li{
-    list-style: none;
-    margin-left: 2rem;
-    align-items: center;
-}
-
-nav ul li:hover{
-    color: #8246CD;
-    cursor: pointer;
-}
-.container-title{
+.section-programas-container{
+    display:flex;
     flex-direction: column;
-    height: 18rem;
-    width: 45%;
-    margin: 2rem auto;
-    display: flex;
-    align-items: center;
     justify-content: center;
-}
-h1{
-   text-align: center;
-    font-size:1.8rem;
+    margin: 0 1.5rem;
+    padding: 0 3rem;
 }
 
-.button-container{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1.3rem;
-    width: 17rem;
-
+.image-programa{
+    width: 12rem;
+    height: 3rem;
 }
-.button-title{
-    background-color: white;
-    border-radius: 30px;
-    padding: 0px 1.2rem;
-    height: 2.5rem;
-    border: 2px solid black;
+
+.seccion-programas-p {
+    color: #000000;
     font-size: 0.8rem;
-    width: 8.8rem;
-    align-content: center;
-    justify-content: center;
-    font-weight: 500;
-}
-.button-title:hover{
-    background: #000000;
-    color: #FFFFFF;
-    cursor: pointer;
-
-}
-.button-title-alter{
-    color: #8246CD;
-    background-color: white;
-    border-radius: 30px;
-    padding: 0px 1.2rem;
-    height: 2.5rem;
-    border: 2px solid #8246CD;
-    font-size: 0.8rem;
-    width: 7rem;
-    align-content: center;
-    justify-content: center;
-    font-weight: 500;
-
-}
-
-.button-title-alter:hover{
-background: #8246CD;
-   color: white;
-   cursor: pointer;
-}
-.container{
-    background: #17202A;
-    height: 300rem;
-}
-
-
-
-
-
-
-
-
+    line-height: 1.2rem;
+  }
 @media (width >= 2500px) {
-    html {
-        font-size: 28px;
-    }
+  html {
+    font-size: 28px;
+  }
 }
 
 @media (width >= 3500px) {
-    html {
-        font-size: 32px;
-    }
+  html {
+    font-size: 32px;
+  }
 }
