@@ -197,7 +197,6 @@ h1 {
 .section-programas{
     display:flex;
     height: 26rem;
-    border-bottom: 1px solid black;
     margin: 0 2rem;
     padding: 0 2rem;
 }
@@ -207,7 +206,7 @@ h1 {
     display: flex;
 }
 
-.image-section{
+.image-section-1{
     width: 35rem;
     height: 24rem;
     border-top-right-radius: 9%;
@@ -231,9 +230,37 @@ h1 {
 
 .seccion-programas-p {
     color: #000000;
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    margin:0
   }
+
+  .h2-section{
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .h3-section{
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+    margin-bottom: 1rem
+
+  }
+
+  .div-seccion-propramas-p{
+    width: 30rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .image-section-2{
+    width: 35rem;
+    height: 24rem;
+    border-top-right-radius: 9%;
+    border-top-left-radius: 9%;
+    border-bottom-left-radius: 9%;
+    justify-self: center;
+}
 @media (width >= 2500px) {
   html {
     font-size: 28px;
